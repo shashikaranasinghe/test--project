@@ -157,15 +157,15 @@ header{
 
 
 }
-.Packages{
+.Package{
     text-align: center;
     padding: 100px;
 }
-.Packages h3{
+.Package h1{
    font-family: "Dongle-bold";
    font-size: 3rem;
 }
-.Packages p{
+.Package p{
     font-family: "Dongle-regular";
     font-size: 1.4rem;
     line-height: 1;
@@ -186,9 +186,22 @@ header{
     font-family: "Dongle-bold";
     font-size: 2rem;
 }
+.team-member button{   font-family: "Dongle-bold";
+    font-size: 1.7rem;}
 
-
-
+.button{
+background-color:green;
+color:white;
+padding:1px 14px;
+text-align:center;
+text-decoration:none;
+display:inline-block;
+font-size:16px;
+margin:8px 5px;
+cursor:pointer;border-radius:20px;
+border:none;
+}
+.button:hover{background-color:red;}
 
 
 
@@ -347,5 +360,6 @@ footer p{
         width: 250px;
         height: 250px;
     }
-}
-  
+
+
+
