@@ -5,6 +5,10 @@
 padding:10px;}</style>
 
 
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination Details</title>
 
 
 <style>body {background-color:lightgrey;}</style>
@@ -225,7 +229,41 @@ immersion,historical exploration,and adventurous activities,all tailored to your
 	<p>Click above</p>
 <button click obove="window.location.href='index.html';"></button>
 
+ <h1>Enter your destination:</h1>
+    <input type="text" id="destinationInput" placeholder="Enter destination">
+    
+    <h2>Select details:</h2>
+    <select id="detailsDropdown">
+        <option value="">--Select Details--</option>
+        <option value="Hotel">Hotel</option>
+        <option value="Attractions">Attractions</option>
+        <option value="Restaurants">Restaurants</option>
+    </select>
 
+    <button onclick="showSelection()">Show Details</button>
+
+    <p id="sDetails"></p>
+
+    <script>
+        function showSelection() {
+            const destination = document.getElementById('destinationInput').value;
+            const details = document.getElementById('detailsDropdown').value;
+
+            let sDetails = "Details for " + destination + ": ";
+
+            if (details === 'Hotel') {
+                sDetails += "Luxury hotel with forest view.every facilitates you acsept";
+            } else if (details === 'Attractions') {
+                sDetails += "Visit local attractions and landmarks.";
+            } else if (details === 'Restaurants') {
+                sDetails += "Explore a variety of dining options.";
+            } else {
+                sDetails = "Please select a valid detail.";
+            }
+
+            document.getElementById('selectedDetails').textContent = sDetails;
+        }
+    </script>
 
 
 
